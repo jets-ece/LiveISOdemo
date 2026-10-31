@@ -1,5 +1,6 @@
 # PhoenixBoot
-Open House 2026 Nov 6-7
+
+![QEMU Captured TUI](image/image-1.jpeg)
 
 PhoenixBoot is a minimal, bootable Linux live-system project with a small custom C interface. It builds a kernel, packs the init program into an initramfs, and creates a bootable ISO.
 
