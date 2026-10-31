@@ -1,5 +1,6 @@
 # PhoenixBoot
 Open House 2026 Nov 6-7
+
 PhoenixBoot is a minimal, bootable Linux live-system project with a small custom C interface. It builds a kernel, packs the init program into an initramfs, and creates a bootable ISO.
 
 **Networking and Wi‑Fi are not implemented yet.** The current image does not provide `nmcli` or network management. USB support is currently aimed at input devices; USB storage and general USB-device management are not yet documented as supported features.
