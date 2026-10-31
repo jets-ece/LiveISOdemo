@@ -82,11 +82,11 @@ The exact available commands are listed by entering `help` after boot.
 ├── flake.nix         # Nix development environment and kernel package
 ├── Makefile          # Initramfs, ISO, QEMU, and cleanup targets
 ├── init.c            # Init process and text UI
-├── commands.c        # Built-in commands
-├── color.c           # Color command
-├── cave_exp.c        # Additional command
 └── src/
-    └── ui.h          # UI and command declarations
+    ├── ui.h          # UI and command declarations
+    ├── commands.c        # Built-in commands
+    ├── color.c           # Color command
+    └── cave_exp.c        # Additional command
 ```
 
 ## Cleanup
