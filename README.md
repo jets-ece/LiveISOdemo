@@ -107,3 +107,11 @@ make distclean
 ## Development status
 
 PhoenixBoot is experimental. Networking, Wi‑Fi, `nmcli`, and general USB-device management are planned but are not included in the current image.
+
+Works on Compaq 6530s, but not on Pavilion 15 eh-xxxx due to Kernel Panic.
+
+`poweroff` doesn't work currently.
+
+## TODO
+
+Audio, Networking, USB, Mouse, Poweroff, UEFI, Secureboot, Resolution Adjustment
