@@ -39,4 +39,10 @@ int  color_parse(const char *s);    /* name or 0-255 -> palette index, -1 on err
 int  color_auto_fg(int bg);         /* readable text color for a background */
 
 void cmd_cave_exp(int argc, char **argv);
+void cmd_keylock(int argc, char **argv);
+void cmd_esp32fsm(int argc, char **argv);
+void cmd_rainheart(int argc, char **argv);
+void cmd_kick(int argc, char **argv);
+void cmd_grades(int argc, char **argv);
+
 #endif

@@ -133,7 +133,14 @@ static void cmd_poweroff(int argc, char **argv) {
 const struct cmd cmds[] = {
     {"help",     "show this list",                       cmd_help},
     {"color",    "change screen color: color <bg> [fg]", cmd_color},   /* color.c */
+    
     {"cave_exp", "Light Illumination", cmd_cave_exp},   /* cave_exp.c */
+    {"keylock", "Keylock Run", cmd_keylock},   /* cave_exp.c */
+    {"esp32_fsm", "ESP32 FSM Demo", cmd_esp32fsm},   /* cave_exp.c */
+    {"rainheart", "A heart in the rain", cmd_rainheart},   /* cave_exp.c */
+    {"kick", "Run at Goal, Score the Shot", cmd_kick},   /* cave_exp.c */
+    {"grades", "Try your luck enrolling something", cmd_grades},   /* cave_exp.c */
+    
     {"clear",    "clear the output window",              cmd_clear},
     {"echo",     "print text",                           cmd_echo},
     {"uname",    "system information",                   cmd_uname},
