@@ -87,7 +87,12 @@ The exact available commands are listed by entering `help` after boot.
     ├── ui.h          # UI and command declarations
     ├── commands.c        # Built-in commands
     ├── color.c           # Color command
-    └── cave_exp.c        # Additional command
+    ├── cave_exp.c        # Additional Programs
+    ├── esp32fsm.c
+    ├── grades.c
+    ├── keylock.c
+    ├── kick.c
+    └── rainheart.c
 ```
 
 ## Cleanup
