@@ -135,11 +135,11 @@ const struct cmd cmds[] = {
     {"color",    "change screen color: color <bg> [fg]", cmd_color},   /* color.c */
     
     {"cave_exp", "Light Illumination", cmd_cave_exp},   /* cave_exp.c */
-    {"keylock", "Keylock Run", cmd_keylock},   /* cave_exp.c */
-    {"esp32_fsm", "ESP32 FSM Demo", cmd_esp32fsm},   /* cave_exp.c */
-    {"rainheart", "A heart in the rain", cmd_rainheart},   /* cave_exp.c */
-    {"kick", "Run at Goal, Score the Shot", cmd_kick},   /* cave_exp.c */
-    {"grades", "Try your luck enrolling something", cmd_grades},   /* cave_exp.c */
+    {"keylock", "Simple Keylock Demo", cmd_keylock},   /* keylock.c */
+    {"esp32_fsm", "ESP32 FSM Demo", cmd_esp32fsm},   /* esp32fsm.c */
+    {"rainheart", "A heart in the rain", cmd_rainheart},   /* rainheart.c */
+    {"kick", "Run towards Goal, Score the Shot", cmd_kick},   /* kick.c */
+    {"grades", "Try your luck on enrolling something", cmd_grades},   /* grades.c */
     
     {"clear",    "clear the output window",              cmd_clear},
     {"echo",     "print text",                           cmd_echo},
