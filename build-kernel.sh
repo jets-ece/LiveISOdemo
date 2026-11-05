@@ -31,8 +31,19 @@ make tinyconfig
   -e USB_OHCI_HCD -e USB_OHCI_HCD_PCI -e USB_UHCI_HCD \
   -e HID -e HID_GENERIC -e USB_HID
 
-# Serial console (lets you see output with qemu -nographic)
+# Serial Hardware (Built-in UART + USB Serial Drivers)
 ./scripts/config -e SERIAL_8250 -e SERIAL_8250_CONSOLE
+./scripts/config -e USB_ACM
+./scripts/config -e USB_SERIAL
+./scripts/config -e USB_SERIAL_GENERIC
+./scripts/config -e USB_SERIAL_CONSOLE
+./scripts/config -e USB_SERIAL_CH341
+./scripts/config -e USB_SERIAL_CP210X
+./scripts/config -e USB_SERIAL_FTDI_SIO
+
+# Poweroff
+
+./scripts/config -e ACPI -e ACPI_BUTTON
 
 make olddefconfig
 make -j"$(nproc)" bzImage KCFLAGS="-std=gnu11" HOSTCFLAGS="-std=gnu11"

@@ -4,12 +4,16 @@ SHELL := /bin/bash
 KERNEL_PATH := kernel/bzImage
 ISO         := phoenixboot.iso
 
+CC          := gcc
+CFLAGS      := -Wall -Wextra -O2 -Iinclude
+LDFLAGS     := -static
+
 all: iso
 
 # ---------- init ----------
-init: init.c
-	gcc -static -o init init.c src/* 
-       	
+init: init.c src/*.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o init init.c src/*.c
+
 initrd.img: init
 	rm -rf build_initrd
 	mkdir -p build_initrd
